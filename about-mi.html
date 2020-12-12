@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Name</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="css/todaslaspaginas.css" rel="stylesheet">
+    <style>
+      body{
+        background-image: url("Images/background\ index.jpg");
+        background-color: #cccccc; 
+        height: auto; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-size: cover; 
+      }
+    
+    </style>
+    
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #006600" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav" >
+
+          <li class="nav-item">
+            <a class="nav-link" href="name.html">¿Qué es name?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="games.html">Juegos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-mi.html">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:salir()">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Index.html">Salir</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="nombre_imprimir"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+      <main>
+        <div class="main">
+          <h1 class="titulopage">Sobre mí</h1>
+          
+          <div class="info">
+            <div>
+              <img class="mi_foto" src="Images/sobre mi.jpg" alt="Yo">
+            </div>
+            
+              <p>Hola. Mi nombre es Natalia Delgado. Soy de Uruguay y trabajo como docente de matemática de secundaria hace 5 años. 
+                Desde pequeña me gustan los juegos de matemática y creo que es una excelente forma de enseñar y practicar matemática en el salón de clase.</p>
+              <p>En todos estos años he descubierto que la enseñaza de la matemática no es acorde a lo que estos tiempos necesitan.
+                Por eso he tomado varios cursos que me han ayudado a mejorar las actividades de clase y el diseño de la propuesta educativa </p>
+              <p>Puedes seguirme en : </p>
+    
+            <p><button>Linkedin</button></p>
+            <p><button>Github</button></p>
+            <div class="trans"></div>
+          </div>
+        </div>
+      </main>
+      
+      <footer >
+        <div >
+          <p >
+            <a id="volver" href="#">Volver arriba</a>
+          </p>
+          <p>Este sitio está elaborado para el curso WD4E</p>
+        </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/409f15697e.js" crossorigin="anonymous"></script>
+      <script src="js/todaslaspaginas.js" type="text/javascript"></script>
+      <script>
+        document.getElementById("nombre_imprimir").innerHTML = localStorage.getItem("Nombre");
+      </script>
+
+  </body>
+</html>

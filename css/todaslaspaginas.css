@@ -1,0 +1,101 @@
+/*Para todas las páginas*/
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    display: block;
+    margin-top:10px;
+    bottom: 0;
+}
+  
+.titulopage{
+    text-align: center;
+    color:#ffffcc;
+    background-color: #000000;
+    padding:5px;
+    text-shadow: 2px 2px 8px #6b6161;
+    text-transform: uppercase;
+    font-family: "Times New Roman", Times, serif;
+    width: fit-content;
+    height: fit-content;
+}
+
+.info{
+    background-color:#ffffcc;
+    padding: 10%;
+    border-radius: 10%;
+    display:block;
+    
+}
+.main{
+    margin: 100px 10% 100px 10% ;
+}
+
+/*Index*/
+.name {
+top: 30%;
+width: 100%;
+text-align: center;
+font-size: 100px;
+color:black;
+width: 500px;
+height: 200px;
+}
+
+.fondo { 
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+#volver{
+    display:none;
+}
+/*about-mi*/
+.mi_foto{
+    width: 30%;
+    height:20%;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+/*games*/  
+.img{
+    height:235px
+}
+
+label{
+    margin: 10px;
+}
+/*contacto*/
+textarea{
+    margin:10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+
+@media only screen  and (min-width:600px){
+
+    #volver{
+        display:content;
+        text-decoration: none;
+        color:black;
+        border: 2px solid cornsilk ;
+        background-color: cornsilk;
+        border-radius: 5px;
+        padding: 1px;
+    }
+
+    .fondo { 
+        width: 100%;
+        height:50%;
+        opacity: 0.5;
+        transform: rotate(90deg);
+    }
+}  
+  
