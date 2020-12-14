@@ -31,6 +31,23 @@ footer {
 .main{
     margin: 100px 10% 100px 10% ;
 }
+.boton {
+    background-color: #004d00;
+    color: #ffffe6;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    
+    letter-spacing: 0.3em;
+  }
+  .boton:hover{
+    
+    text-decoration: none;
+    background-color: #000000;
+  }
 
 /*Index*/
 .name {
