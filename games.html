@@ -46,9 +46,6 @@
           <li class="nav-item">
             <a class="nav-link" href="javascript:salir()">Salir</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="nombre_imprimir"></a>
-          </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search" id="buscador" onkeydown="Buscar()">
@@ -141,12 +138,13 @@
       </div>  
     </main>
       
-    <footer >
-      <div >
-        <p >
+    <footer>
+      <div>
+        <div class="izq" style="width:30%; float:left;">Welcome <span  id="nombre_imprimir" ></span></div>
+        <div class="medio" style="width:30%; float:middle;">
           <a id="volver" href="#">Volver arriba</a>
-        </p>
-        <p>Este sitio está elaborado para el curso WD4E</p>
+        </div>
+        <div class="der" style="width:30%; float:right;">Este sitio está elaborado para el curso WD4E</div>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

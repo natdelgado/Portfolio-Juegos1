@@ -1,19 +1,40 @@
 /*Para todas las páginas*/
 footer {
     text-align: center;
-    padding: 3px;
+    padding: 5px;
     background-color: black;
     color: white;
     display: block;
     margin-top:10px;
     bottom: 0;
+    position: fixed;
+    left:0;
+    width:100%;
+}
+
+.izq, .der, .medio{
+    width: 30%;
+    display: inline;
+    
+}
+.izq{
+    float:left;
+    background-image: linear-gradient(to right, #74ebd5,#acb6e5);
+    background-color: #ffffe6;
+    color:#000000;
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.der{
+    float:right;
 }
   
 .titulopage{
     text-align: center;
     color:#ffffcc;
     background-color: #000000;
-    padding:5px;
+    padding:5px 10px;
     text-shadow: 2px 2px 8px #6b6161;
     text-transform: uppercase;
     font-family: "Times New Roman", Times, serif;
@@ -32,22 +53,42 @@ footer {
     margin: 100px 10% 100px 10% ;
 }
 .boton {
+    background-image: linear-gradient(to right, #184E68, #57CA85 );
     background-color: #004d00;
     color: #ffffe6;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 10px 15px 10px 15px;
     border-radius: 10px;
-    
+    margin: 5px;
     letter-spacing: 0.3em;
-  }
-  .boton:hover{
-    
+}
+.boton:hover{
     text-decoration: none;
     background-color: #000000;
-  }
+    background-image: none;
+}
+a{
+    text-decoration: none;
+}
+#volver{
+    width:33%;
+    background-image: linear-gradient(to right, #184E68, #57CA85 );
+    background-color: #004d00;
+    text-decoration: none;
+    color: #ffffe6;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 5px 10px ;
+    letter-spacing: 0.2em;
+}
+#volver:hover{
+    text-decoration: none;
+    background-image: none;
+    background-color: #004d00;
+   
+}
 
 /*Index*/
 .name {
@@ -66,9 +107,6 @@ height: 200px;
     opacity: 0.5;
 }
 
-#volver{
-    display:none;
-}
 /*about-mi*/
 .mi_foto{
     width: 30%;
@@ -87,9 +125,7 @@ label{
     margin: 10px;
 }
 /*contacto*/
-textarea{
-    margin:10px;
-}
+
 
 tr:nth-child(odd) {
     background-color: #dddddd;
@@ -98,15 +134,7 @@ tr:nth-child(odd) {
 
 @media only screen  and (min-width:600px){
 
-    #volver{
-        display:content;
-        text-decoration: none;
-        color:black;
-        border: 2px solid cornsilk ;
-        background-color: cornsilk;
-        border-radius: 5px;
-        padding: 1px;
-    }
+    
 
     .fondo { 
         width: 100%;

@@ -11,7 +11,7 @@
       <link href="css/todaslaspaginas.css" rel="stylesheet">
       <style>
         body{
-        background-image: radial-gradient( #ffcc99,#ff9980, black);
+        background-image: linear-gradient( #f2994a, #48b1bf);
         background-color: #cccccc; 
         height: auto; 
         background-position: center; 
@@ -21,6 +21,11 @@
       .imgcarousel{
         height: 500px;
       }
+      #juegos:hover{
+        color: white;
+      }
+     
+      
       
       </style>
     
@@ -49,9 +54,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="javascript:salir()">Salir</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" id="nombre_imprimir"></a>
             </li>
           </ul>
           
@@ -150,19 +152,20 @@
               Gana el jugador que tenga más palitos
               En caso de empate. Se realizará una operación al azar para ver cuál de los jugadores la resuelve más rápido correctamente.
             </p>
-
+            <br>
+            <p><a href="games.html" class="boton" id="juegos">Volver al listado</a></p> 
           </div>
         </div>
-        <p><button class="boton">Volver al listado de juegos</button></p>  
       </div>
     </main>
     
-    <footer >
-      <div >
-        <p >
-          <a id="volver" href="#">Volver arriba</a>
-        </p>
-        <p>Este sitio está elaborado para el curso WD4E</p>
+    <footer>
+      <div>
+        <div class="izq" >Welcome <span  id="nombre_imprimir" ></span></div>
+        <div class="medio" >
+          <a href="#" id ="volver" style="text-decoration: none;">Volver arriba</a>
+        </div>
+        <div class="der" >Este sitio está elaborado para el curso WD4E</div>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -173,7 +176,6 @@
     <script>
       document.getElementById("nombre_imprimir").innerHTML = localStorage.getItem("Nombre");
       
-        
     </script>
 
   </body>
