@@ -60,19 +60,13 @@
         <form>
           <h1 style="color: black">Name</h1>
           <p>
-            <label>Nombre: <input
-              type="text"
-              name="nombre"
-              id="nombre_index"
-              value=""
-              placeholder="Escribe tu nombre"
-            /></label>
-            <br />
+            <label>Nombre: <input type="text" name="nombre" id="nombre_index" value="" placeholder="Escribe tu nombre"/></label>
+            <br/>
           </p>
 
           <p>
             <!-- Called onClick inside of `todaslaspaginas.js` for more optimized function -->
-            <button class="boton" id="boton_ingreso">Juegos</button>
+            <button class="boton" id="boton_ingreso" onclick="ingreso()">Juegos</button>
           </p>
         </form>
       </div>
@@ -97,6 +91,6 @@
       src="https://kit.fontawesome.com/409f15697e.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/todaslaspaginas.js" type="text/javascript"></script>
+    <script src="js/todaslaspaginas.js" ></script>
   </body>
 </html>

@@ -1,22 +1,26 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
 
-    let botonLogin = document.getElementById('boton_ingreso');
+    let loginButton = document.getElementById('boton_ingreso');
 
-    if (botonLogin) {
-        botonLogin.addEventListener('click', ingreso)
+    
+    if (loginButton) {
+       
+        loginButton.addEventListener('click', ingreso)
     }
 
-    let botonEnviar = document.getElementById('boton_enviar');
+    let sendButton = document.getElementById('boton_enviar');
 
-    if (botonEnviar) {
-        botonEnviar.addEventListener('click', recibirMensaje)
+    if (sendButton) {
+        sendButton.addEventListener('click', recibirMensaje)
     }
 
 });
 
-function recibirMensaje() {
-    
+function recibirMensaje(e) {
+ 
+    e.preventDefault()
+
     var email = document.getElementById("ingreso_email").value;
     var mensaje = document.getElementById("texto_mensaje").value;
 
@@ -26,16 +30,17 @@ function recibirMensaje() {
         mensaje= "";
     } else {
         alert("Debe completar los campos de email y mensaje antes de enviar")
-    } 
+    }
 };
 
-function ingreso() {
-    
+function ingreso(e) {
+  
+    e.preventDefault()
+
     var nombre = document.getElementById("nombre_index").value;
     localStorage.setItem("Nombre", nombre);
     window.location.href = "games.html"
 };
-
 function salir() {
     localStorage.clear();
     location.href = "index.html";
