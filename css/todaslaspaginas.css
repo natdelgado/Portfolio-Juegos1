@@ -1,4 +1,7 @@
 /*Para todas las páginas*/
+.barra{
+    background-color: #445626;
+}
 footer {
     text-align: center;
     padding: 5px;
