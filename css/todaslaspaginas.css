@@ -62,11 +62,13 @@ footer {
     border-radius: 10px;
     margin: 5px;
     letter-spacing: 0.3em;
+    border-color:#000000;
 }
 .boton:hover{
     text-decoration: none;
     background-color: #000000;
     background-image: none;
+    border-color: #000000;
 }
 a{
     text-decoration: none;
@@ -87,8 +89,7 @@ a{
 #volver:hover{
     text-decoration: none;
     background-image: none;
-    background-color: #004d00;
-   
+    background-color: #004d00; 
 }
 
 /*Index*/
@@ -134,8 +135,6 @@ tr:nth-child(odd) {
 
 
 @media only screen  and (min-width:600px){
-
-    
 
     .fondo { 
         width: 100%;
