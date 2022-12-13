@@ -1,6 +1,6 @@
 /*Para todas las páginas*/
 .barra{
-    background-color: #445626;
+    background-color: rgb(24, 78, 104);
 }
 footer {
     text-align: center;
@@ -23,7 +23,7 @@ footer {
 .izq{
     float:left;
     background-image: linear-gradient(to right, #74ebd5,#acb6e5);
-    background-color: #ffffe6;
+    background-color: rgb(255, 255, 230);
     color:#000000;
     font-weight: bolder;
     padding-top: 5px;
@@ -35,8 +35,7 @@ footer {
   
 .titulopage{
     text-align: center;
-    color:#ffffcc;
-    background-color: #000000;
+    color:rgb(255, 255, 230);
     padding:5px 10px;
     text-shadow: 2px 2px 8px #6b6161;
     text-transform: uppercase;
@@ -46,18 +45,19 @@ footer {
 }
 
 .info{
-    background-color:#ffffcc;
+    background-color:rgb(24, 78, 104, 0.8);
     padding: 10%;
     border-radius: 10%;
     display:block;
+    color:#ffffe6;
     
 }
 .main{
     margin: 100px 10% 100px 10% ;
 }
 .boton {
-    background-image: linear-gradient(to right, #184E68, #57CA85 );
-    background-color: #004d00;
+    background-image: linear-gradient(to right, #57CA85, #184E68, #57CA85 );
+    background-color: #184E68;
     color: #ffffe6;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
@@ -78,8 +78,8 @@ a{
 }
 #volver{
     width:33%;
-    background-image: linear-gradient(to right, #184E68, #57CA85 );
-    background-color: #004d00;
+    background-image: linear-gradient(to right, #57CA85, #184E68, #57CA85 );
+    background-color: #184E68;
     text-decoration: none;
     color: #ffffe6;
     font-weight: bolder;
@@ -92,7 +92,7 @@ a{
 #volver:hover{
     text-decoration: none;
     background-image: none;
-    background-color: #004d00; 
+    background-color: #184E68; 
 }
 
 /*Index*/
